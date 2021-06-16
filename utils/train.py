@@ -13,3 +13,7 @@ def train_model(model,training_dataset, testing_dataset, epochs):
 
 def save_model(model,name):
     model.save(name)
+
+def test_model(model,testing_dataset):
+    return model.evaluate(testing_dataset)
+

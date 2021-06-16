@@ -39,7 +39,7 @@ training, testing = popnet.get_dataset_from_dir(Batch,Image_size,Dataset,Split)
 classes = popnet.classes(training)
 model = popnet.cnn_model(len(classes),Tensor_size)
 model = popnet.train_model(model,training,testing,epochs)
-# and done !! Time to Train
+# and done !! 
 
 #Time to save the model to disk
 popnet.save_model(model,Name)

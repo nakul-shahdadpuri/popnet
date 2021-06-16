@@ -17,3 +17,7 @@ def save_model(model,name):
 def test_model(model,testing_dataset):
     return model.evaluate(testing_dataset)
 
+def load_model(name):
+    model = tf.keras.models.load_model(name)
+    return model
+    

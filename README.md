@@ -66,3 +66,8 @@ training, testing = popnet.get_dataset_from_dir(Batch,Image_size,Dataset,Split)
 popnet.test_model(model,testing)
 ```
 
+## Dependencies
+
+```sh
+tensorflow==2.5.0
+```

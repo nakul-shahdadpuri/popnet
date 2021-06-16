@@ -1,3 +1,5 @@
+from tensorflow.keras.preprocessing import image_dataset_from_directory
+
 def get_dataset_from_dir(batch_size,image_size,directory,split):
 
 	train_dataset = image_dataset_from_directory(directory,
